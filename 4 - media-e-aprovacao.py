@@ -1,6 +1,6 @@
-n1 = 80
-n2 = 45
-n3 = 60
+n1 = float(input("Digite sua media 1:"))
+n2 = float(input("Digite sua media 2:"))
+n3 = float(input("Digite sua media 3:"))
 
 media = (n1 + n2 + n3) / 3
 
