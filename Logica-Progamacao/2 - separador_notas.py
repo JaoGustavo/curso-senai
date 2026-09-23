@@ -1,16 +1,19 @@
-lista_notas = [7.5, 4.0, 9.2, 5.5, 3.8, 10.0, 6.5, 2.0]
+notas = [7.5, 4.0, 9.2, 5.5, 3.8, 10.0, 6.5, 2.0]
 
-media_turma = sum(lista_notas) / len(lista_notas)
-print(f"Média da turma: {media_turma:.2f}")
+soma = sum(notas)
+quantidade = len(notas)
+media = soma / quantidade
 
-lista_aprovados = []
-lista_recuperacao = []
+print("A média da turma é:", media)
 
-for nota_atual in lista_notas:
-    if nota_atual >= 6.0:
-        lista_aprovados.append(nota_atual)
+aprovados = []
+recuperacao = []
+
+for n in notas:
+    if n > 6.0:
+        aprovados.append(n)
     else:
-        lista_recuperacao.append(nota_atual)
+        recuperacao.append(n)
 
-print(f"\nTotal de aprovados: {len(lista_aprovados)}")
-print(f"Total em recuperação: {len(lista_recuperacao)}")
+print("Total de aprovados:", len(aprovados))
+print("Total em recuperação:", len(recuperacao))

@@ -1,13 +1,16 @@
-lista_alunos = []
+alunos = []
 
-for contador in range(1, 6):
-    nome_aluno = input(f"Digite o nome do aluno {contador}: ")
-    nome_formatado = nome_aluno.strip().title()
+for i in range(5):
+    nome = input("Digite o nome do aluno: ")
+    
 
-    if nome_formatado in lista_alunos:
+    nome = nome.strip()
+    nome = nome.title()
+    
+    if nome in alunos:
         print("Aluno já cadastrado na lista!")
     else:
-        lista_alunos.append(nome_formatado)
+        alunos.append(nome)
 
-print("\nLista final de alunos cadastrados:")
-print(lista_alunos)
+print("Lista final:")
+print(alunos)

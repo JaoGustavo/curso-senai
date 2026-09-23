@@ -1,11 +1,11 @@
-fila_espera = ["Ana", "Carlos", "Beatriz", "Daniel"]
+fila = ["Ana", "Carlos", "Beatriz", "Daniel"]
 
-fila_espera.append("Eduardo")
-print(f"Fila após chegada de Eduardo: {fila_espera}")
+fila.append ("Eduardo")
 
-aluno_atendido = fila_espera.pop(0)
-print(f"Atendendo o aluno: {aluno_atendido}")
+atendido = fila.pop(0)
 
-fila_espera.remove("Beatriz")
+print("Atendendo o aluno:", atendido)
 
-print(f"\nEstado final da fila de espera: {fila_espera}")
+fila.remove("Beatriz")
+
+print("Fila final:", fila)
